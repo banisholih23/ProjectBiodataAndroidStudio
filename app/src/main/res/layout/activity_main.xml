@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_namapanjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Panjang" />
+
+            <EditText
+                android:id="@+id/edt_namapanggilan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Panggilan" />
+
+            <Spinner
+                android:id="@+id/spn_jnklmn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"></Spinner>
+
+            <EditText
+                android:id="@+id/edt_tempatlahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tempat Lahir" />
+
+            <EditText
+                android:id="@+id/edt_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat Lengkap" />
+
+            <Button
+                android:id="@+id/btn_tglahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir" />
+
+            <EditText
+                android:id="@+id/edt_hobi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hobi" />
+
+            <EditText
+                android:id="@+id/edt_pekerjaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pekerjaan" />
+
+            <TextView
+                android:id="@+id/labelhobi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Bahasa Pemrograman Yang Disukai"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cekboxjava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelhobi"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:text="C/C++"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cekboxnet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cekboxjava"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:text="JAVA"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cekboxsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cekboxnet"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:text="HTML"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cekboxs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cekboxnet"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:text="Phyton"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/labelpk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelemail"
+                android:layout_marginTop="15dp"
+                android:text="Pendidikan Terakhir"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/grouppk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelpk"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <RadioButton
+                    android:id="@+id/radiosma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMA"
+                    android:orientation="vertical"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radios1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strata 1 (S1)"
+                    android:orientation="vertical"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radios2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strata 2 (S2)"
+                    android:textSize="14sp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_proses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Memproses Biodata" />
+
+            <Button
+                android:id="@+id/save_internal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan ke Internal" />
+
+            <Button
+                android:id="@+id/save_external"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Simpan ke External" />
+
+
+            <TextView
+                android:id="@+id/txt_pengenalan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biodatamu" />
+
+            <TextView
+                android:id="@+id/outputhobi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/outputpk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
